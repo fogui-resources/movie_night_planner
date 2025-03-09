@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Movie & TV Show Finder</h1>
+    <input type="text" id="searchQuery" placeholder="Search for a movie...">
+    <button onclick="searchMovie()">Search</button>
+
+    <h2>Popular Movies</h2>
+    <div class="results" id="popularMovies"></div>
+
+    <h2>Top-Rated Movies</h2>
+    <div class="results" id="topRatedMovies"></div>
+
+    <script>
+        const API_BASE_URL = "http://127.0.0.1:8000";
+
+        async function fetchMovies(endpoint, containerId) {
+            const response = await fetch(`${API_BASE_URL}${endpoint}`);
+            const data = await response.json();
+            const container = document.getElementById(containerId);
+            container.innerHTML = "";
+
+            data.results.forEach(movie => {
+                const movieDiv = document.createElement("div");
+                movieDiv.classList.add("movie");
+                movieDiv.innerHTML = `
+                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+                    <h3>${movie.title || movie.name}</h3>
+                    <p>⭐ ${movie.vote_average} (${movie.vote_count} votes)</p>
+                    <p>${movie.overview.substring(0, 100)}...</p>
+                `;
+                container.appendChild(movieDiv);
+            });
+        }
+
+        async function searchMovie() {
+            const query = document.getElementById("searchQuery").value;
+            if (!query) return;
+            fetchMovies(`/movies/search/?query=${query}`, "popularMovies");
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetchMovies("/movies/popular", "popularMovies");
+            fetchMovies("/movies/top-rated", "topRatedMovies");
+        });
+    </script>
+
+</body>
+</html>
