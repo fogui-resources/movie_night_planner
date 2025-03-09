@@ -1,5 +1,11 @@
 # Movie & TV Show Recommender API
 
+![License](https://img.shields.io/github/license/freedomofchoice1991/movie_night_planner)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green)
+![GitHub issues](https://img.shields.io/github/issues/freedomofchoice1991/movie_night_planner)
+![Last Commit](https://img.shields.io/github/last-commit/freedomofchoice1991/movie_night_planner)
+
 ## Overview
 This is a **FastAPI-based application** that suggests movies and TV shows using **The Movie Database (TMDb) API**. Users can:
 - Search for movies 🎬
